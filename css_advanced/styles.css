@@ -156,7 +156,8 @@ h1 {
     width: 100%;
 }
 
-.pros-list img {
+.pros-list img,
+main .quote img {
     width: 150px;
 }
 
@@ -180,4 +181,50 @@ h1 {
     font-size: 16px;
     color: var(--white);
     text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+main .quote {
+    background-color: var(--primary);
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+main .quote-main {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.quote-main {
+    width: 80%;
+}
+
+blockquote {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.quote-main h3 {
+    font-family: source-sans-pro-bold, sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    text-align: left;
+}
+
+.quote-main p {
+    font-family: source-sans-pro-italic, sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    text-align: left;
 }
