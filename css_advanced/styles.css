@@ -422,3 +422,45 @@ main .faq {
     color: var(--secondary);
     opacity: .7;
 }
+
+footer {
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--white);
+    padding-top: 3rem;
+}
+
+.footer-items img {
+    width: 169px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+footer p {
+    color: var(--white);
+    font-family: source-sans-pro, sans-serif;
+    opacity: .3;
+}
