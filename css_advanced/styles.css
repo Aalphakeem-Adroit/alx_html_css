@@ -20,6 +20,13 @@
 }
 
 @font-face {
+  font-family: 'source-sans-pro-light';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'source-sans-pro-bold';
   src: url('/fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
   font-weight: 300;
@@ -369,3 +376,49 @@ main .membership {
     opacity: .7;
 }
 
+main .faq {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.faq-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.faq-container h2 {
+    font-family: source-sans-pro-light, sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.faq-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item h3 {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+.faq-item p {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: var(--secondary);
+    opacity: .7;
+}
