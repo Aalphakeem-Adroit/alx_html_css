@@ -57,7 +57,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 nav {
@@ -135,14 +135,16 @@ h1 {
     gap: 4rem;
 }
 
-.header-pros h2 {
+.header-pros h2,
+.popular-tutorial h2 {
     font-family: source-sans-pro, sans-serif;
     font-weight: 300;
     font-size: 32px;
     color: var(--white);
 }
 
-.header-pros h2 span {
+.header-pros h2 span,
+.popular-tutorial span {
     color: var(--primary);
     font-family: source-sans-pro-bold, sans-serif;
     font-weight: 500;
@@ -227,4 +229,92 @@ blockquote {
     font-size: 22px;
     color: var(--white);
     text-align: left;
+}
+
+main .tutorial {
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+main .popular-tutorial {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+main .popular-tutorial h2 {
+    color: rgb(70, 69, 69);
+}
+
+.tutorial-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tutorial-card {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.tutorial-card h3 {
+    font-family: source-sans-pro-bold, sans-serif;
+    padding: 0 10px;
+    color: var(--secondary);
+    text-align: left;
+    font-size: 16px;
+}
+
+.tutorial-card p {
+    font-family: source-sans-pro, sans-serif;
+    padding: 0 10px;
+    color: var(--secondary);
+    opacity: 0.5;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tutorial-card .tutorial-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 10px;
+}
+
+.tutorial-card .tutorial-profile img {
+    width: 30px;
+}
+
+.tutorial-card .tutorial-profile h4 {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.star-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    color: var(--primary);
+}
+
+.empty-star {
+    color: var(--secondary);
+    opacity: .2;
 }
